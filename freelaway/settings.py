@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'autenticacao',
+    'job',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,6 @@ constants.SUCCESS: 'alert-success',
 constants.INFO: 'alert-info',
 constants.WARNING: 'alert-warning',
 }
+
+#EMAIL
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
